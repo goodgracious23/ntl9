@@ -1,0 +1,559 @@
+year,lake,perturbation,value
+1981,Trout,Rusty,0
+1982,Trout,Rusty,0.10
+1983,Trout,Rusty,0.11
+1984,Trout,Rusty,0.31
+1985,Trout,Rusty,1.37
+1986,Trout,Rusty,0.87
+1987,Trout,Rusty,3.04
+1988,Trout,Rusty,5.37
+1989,Trout,Rusty,12.28
+1990,Trout,Rusty,10.30
+1991,Trout,Rusty,9.63
+1992,Trout,Rusty,16.16
+1993,Trout,Rusty,19.30
+1994,Trout,Rusty,15.97
+1995,Trout,Rusty,27.17
+1996,Trout,Rusty,35.93
+1997,Trout,Rusty,35.80
+1998,Trout,Rusty,26.39
+1999,Trout,Rusty,33.56
+2000,Trout,Rusty,23.00
+2001,Trout,Rusty,45.17
+2002,Trout,Rusty,45.61
+2003,Trout,Rusty,50.48
+2004,Trout,Rusty,62.10
+2005,Trout,Rusty,58.46
+2006,Trout,Rusty,57.37
+2007,Trout,Rusty,82.81
+2008,Trout,Rusty,72.92
+2009,Trout,Rusty,45.26
+2010,Trout,Rusty,56.01
+2011,Trout,Rusty,77.20
+2012,Trout,Rusty,144.69
+2013,Trout,Rusty,46.67
+2014,Trout,Rusty,43.39
+2015,Trout,Rusty,22.50
+2016,Trout,Rusty,35.33
+2017,Trout,Rusty,24.56
+2018,Trout,Rusty,7.44
+2019,Trout,Rusty,7.33
+2020,Trout,Rusty,
+2021,Trout,Rusty,4.56
+2022,Trout,Rusty,7.61
+2023,Trout,Rusty,4.61
+2024,Trout,Rusty,5.83
+2025,Trout,Rusty,
+1981,Trout,Trout,0
+1982,Trout,Trout,0
+1983,Trout,Trout,18994
+1984,Trout,Trout,20800
+1985,Trout,Trout,15625
+1986,Trout,Trout,4745
+1987,Trout,Trout,96000
+1988,Trout,Trout,0
+1989,Trout,Trout,0
+1990,Trout,Trout,0
+1991,Trout,Trout,0
+1992,Trout,Trout,0
+1993,Trout,Trout,0
+1994,Trout,Trout,0
+1995,Trout,Trout,0
+1996,Trout,Trout,0
+1997,Trout,Trout,0
+1998,Trout,Trout,88023
+1999,Trout,Trout,0
+2000,Trout,Trout,96612
+2001,Trout,Trout,100000
+2002,Trout,Trout,0
+2003,Trout,Trout,39120
+2004,Trout,Trout,19693
+2005,Trout,Trout,2130
+2006,Trout,Trout,0
+2007,Trout,Trout,0
+2008,Trout,Trout,0
+2009,Trout,Trout,0
+2010,Trout,Trout,39405
+2011,Trout,Trout,49112
+2012,Trout,Trout,8083
+2013,Trout,Trout,0
+2014,Trout,Trout,51395
+2015,Trout,Trout,54333
+2016,Trout,Trout,17944
+2017,Trout,Trout,0
+2018,Trout,Trout,0
+2019,Trout,Trout,14360
+2020,Trout,Trout,25573
+2021,Trout,Trout,0
+2022,Trout,Trout,0
+2023,Trout,Trout,15763
+2024,Trout,Trout,15753
+2025,Trout,Trout,0
+1981,Trout,Spiny WF,0
+1982,Trout,Spiny WF,0
+1983,Trout,Spiny WF,0
+1984,Trout,Spiny WF,0
+1985,Trout,Spiny WF,0
+1986,Trout,Spiny WF,0
+1987,Trout,Spiny WF,0
+1988,Trout,Spiny WF,0
+1989,Trout,Spiny WF,0
+1990,Trout,Spiny WF,0
+1991,Trout,Spiny WF,0
+1992,Trout,Spiny WF,0
+1993,Trout,Spiny WF,0
+1994,Trout,Spiny WF,0
+1995,Trout,Spiny WF,0
+1996,Trout,Spiny WF,0
+1997,Trout,Spiny WF,0
+1998,Trout,Spiny WF,0
+1999,Trout,Spiny WF,0
+2000,Trout,Spiny WF,0
+2001,Trout,Spiny WF,0
+2002,Trout,Spiny WF,0
+2003,Trout,Spiny WF,0
+2004,Trout,Spiny WF,0
+2005,Trout,Spiny WF,0
+2006,Trout,Spiny WF,0
+2007,Trout,Spiny WF,0
+2008,Trout,Spiny WF,0
+2009,Trout,Spiny WF,0
+2010,Trout,Spiny WF,0
+2011,Trout,Spiny WF,0
+2012,Trout,Spiny WF,0
+2013,Trout,Spiny WF,0
+2014,Trout,Spiny WF,7
+2015,Trout,Spiny WF,15
+2016,Trout,Spiny WF,55
+2017,Trout,Spiny WF,60
+2018,Trout,Spiny WF,30
+2019,Trout,Spiny WF,42
+2020,Trout,Spiny WF,25
+2021,Trout,Spiny WF,7
+2022,Trout,Spiny WF,12
+2023,Trout,Spiny WF,8
+2024,Trout,Spiny WF,15
+2025,Trout,Spiny WF,13
+1981,Sparkling,Rusty,1.45
+1982,Sparkling,Rusty,1.98
+1983,Sparkling,Rusty,3.53
+1984,Sparkling,Rusty,3.83
+1985,Sparkling,Rusty,2.35
+1986,Sparkling,Rusty,4.18
+1987,Sparkling,Rusty,4.61
+1988,Sparkling,Rusty,16.93
+1989,Sparkling,Rusty,2.84
+1990,Sparkling,Rusty,2.07
+1991,Sparkling,Rusty,4.60
+1992,Sparkling,Rusty,5.70
+1993,Sparkling,Rusty,1.23
+1994,Sparkling,Rusty,2.97
+1995,Sparkling,Rusty,5.00
+1996,Sparkling,Rusty,7.77
+1997,Sparkling,Rusty,8.07
+1998,Sparkling,Rusty,5.67
+1999,Sparkling,Rusty,13.33
+2000,Sparkling,Rusty,10.78
+2001,Sparkling,Rusty,7.72
+2002,Sparkling,Rusty,6.28
+2003,Sparkling,Rusty,0.53
+2004,Sparkling,Rusty,0.31
+2005,Sparkling,Rusty,0.19
+2006,Sparkling,Rusty,0.28
+2007,Sparkling,Rusty,0.24
+2008,Sparkling,Rusty,0.11
+2009,Sparkling,Rusty,0.00
+2010,Sparkling,Rusty,0.58
+2011,Sparkling,Rusty,0.06
+2012,Sparkling,Rusty,0.11
+2013,Sparkling,Rusty,0.08
+2014,Sparkling,Rusty,0.00
+2015,Sparkling,Rusty,0.06
+2016,Sparkling,Rusty,0.28
+2017,Sparkling,Rusty,0.33
+2018,Sparkling,Rusty,0.17
+2019,Sparkling,Rusty,0.22
+2020,Sparkling,Rusty,
+2021,Sparkling,Rusty,0.06
+2022,Sparkling,Rusty,0.34
+2023,Sparkling,Rusty,
+2024,Sparkling,Rusty,
+2025,Sparkling,Rusty,
+1981,Sparkling,Cisco,60
+1982,Sparkling,Cisco,32
+1983,Sparkling,Cisco,10.5
+1984,Sparkling,Cisco,8
+1985,Sparkling,Cisco,10.5
+1986,Sparkling,Cisco,10
+1987,Sparkling,Cisco,0
+1988,Sparkling,Cisco,3
+1989,Sparkling,Cisco,0.5
+1990,Sparkling,Cisco,0.5
+1991,Sparkling,Cisco,0
+1992,Sparkling,Cisco,0
+1993,Sparkling,Cisco,0
+1994,Sparkling,Cisco,0
+1995,Sparkling,Cisco,0
+1996,Sparkling,Cisco,0
+1997,Sparkling,Cisco,0
+1998,Sparkling,Cisco,0.5
+1999,Sparkling,Cisco,0
+2000,Sparkling,Cisco,0
+2001,Sparkling,Cisco,0
+2002,Sparkling,Cisco,0
+2003,Sparkling,Cisco,0
+2004,Sparkling,Cisco,0
+2005,Sparkling,Cisco,0
+2006,Sparkling,Cisco,0
+2007,Sparkling,Cisco,0
+2008,Sparkling,Cisco,0
+2009,Sparkling,Cisco,0
+2010,Sparkling,Cisco,0
+2011,Sparkling,Cisco,0
+2012,Sparkling,Cisco,0
+2013,Sparkling,Cisco,0
+2014,Sparkling,Cisco,0
+2015,Sparkling,Cisco,0
+2016,Sparkling,Cisco,0
+2017,Sparkling,Cisco,0
+2018,Sparkling,Cisco,0
+2019,Sparkling,Cisco,0
+2020,Sparkling,Cisco,0
+2021,Sparkling,Cisco,9
+2022,Sparkling,Cisco,9
+2023,Sparkling,Cisco,6
+2024,Sparkling,Cisco,29
+2025,Sparkling,Cisco,
+1981,Sparkling,Smelt,
+1982,Sparkling,Smelt,5.5
+1983,Sparkling,Smelt,3
+1984,Sparkling,Smelt,60.7
+1985,Sparkling,Smelt,32.7
+1986,Sparkling,Smelt,3.5
+1987,Sparkling,Smelt,30
+1988,Sparkling,Smelt,10.5
+1989,Sparkling,Smelt,14.9
+1990,Sparkling,Smelt,23.7
+1991,Sparkling,Smelt,50.5
+1992,Sparkling,Smelt,103.6
+1993,Sparkling,Smelt,102.1
+1994,Sparkling,Smelt,94.4
+1995,Sparkling,Smelt,8.05
+1996,Sparkling,Smelt,2.1
+1997,Sparkling,Smelt,196
+1998,Sparkling,Smelt,25
+1999,Sparkling,Smelt,0.8
+2000,Sparkling,Smelt,21.8
+2001,Sparkling,Smelt,221
+2002,Sparkling,Smelt,41.3
+2003,Sparkling,Smelt,69.1
+2004,Sparkling,Smelt,159.5
+2005,Sparkling,Smelt,82.5
+2006,Sparkling,Smelt,63.1
+2007,Sparkling,Smelt,40
+2008,Sparkling,Smelt,16
+2009,Sparkling,Smelt,7
+2010,Sparkling,Smelt,1.1
+2011,Sparkling,Smelt,26
+2012,Sparkling,Smelt,33
+2013,Sparkling,Smelt,35.9
+2014,Sparkling,Smelt,3.7
+2015,Sparkling,Smelt,6.5
+2016,Sparkling,Smelt,2
+2017,Sparkling,Smelt,8
+2018,Sparkling,Smelt,28
+2019,Sparkling,Smelt,56
+2020,Sparkling,Smelt,6
+2021,Sparkling,Smelt,6
+2022,Sparkling,Smelt,0
+2023,Sparkling,Smelt,1
+2024,Sparkling,Smelt,0
+2025,Sparkling,Smelt,0
+1981,Crystal,Smelt,0
+1982,Crystal,Smelt,0
+1983,Crystal,Smelt,0
+1984,Crystal,Smelt,0
+1985,Crystal,Smelt,0.5
+1986,Crystal,Smelt,7
+1987,Crystal,Smelt,10.5
+1988,Crystal,Smelt,14.5
+1989,Crystal,Smelt,24.5
+1990,Crystal,Smelt,21.9
+1991,Crystal,Smelt,55.4
+1992,Crystal,Smelt,32.6
+1993,Crystal,Smelt,185.7
+1994,Crystal,Smelt,426.4
+1995,Crystal,Smelt,10.7
+1996,Crystal,Smelt,413.9
+1997,Crystal,Smelt,284
+1998,Crystal,Smelt,192.7
+1999,Crystal,Smelt,577.4
+2000,Crystal,Smelt,680.5
+2001,Crystal,Smelt,664.8
+2002,Crystal,Smelt,32.9
+2003,Crystal,Smelt,312.3
+2004,Crystal,Smelt,570
+2005,Crystal,Smelt,353
+2006,Crystal,Smelt,268
+2007,Crystal,Smelt,713.8
+2008,Crystal,Smelt,541.5
+2009,Crystal,Smelt,513.6
+2010,Crystal,Smelt,342
+2011,Crystal,Smelt,255.5
+2012,Crystal,Smelt,574.8
+2013,Crystal,Smelt,462
+2014,Crystal,Smelt,360.7
+2015,Crystal,Smelt,140.7
+2016,Crystal,Smelt,3147
+2017,Crystal,Smelt,172
+2018,Crystal,Smelt,87.8
+2019,Crystal,Smelt,90.2
+2020,Crystal,Smelt,79
+2021,Crystal,Smelt,3
+2022,Crystal,Smelt,16
+2023,Crystal,Smelt,11
+2024,Crystal,Smelt,24
+2025,Crystal,Smelt,0
+1981,Crystal,Cisco,0
+1982,Crystal,Cisco,0
+1983,Crystal,Cisco,0
+1984,Crystal,Cisco,0
+1985,Crystal,Cisco,0
+1986,Crystal,Cisco,0
+1987,Crystal,Cisco,0
+1988,Crystal,Cisco,0
+1989,Crystal,Cisco,0
+1990,Crystal,Cisco,0
+1991,Crystal,Cisco,0
+1992,Crystal,Cisco,0
+1993,Crystal,Cisco,0
+1994,Crystal,Cisco,0
+1995,Crystal,Cisco,0
+1996,Crystal,Cisco,0
+1997,Crystal,Cisco,0
+1998,Crystal,Cisco,0
+1999,Crystal,Cisco,0
+2000,Crystal,Cisco,0
+2001,Crystal,Cisco,0
+2002,Crystal,Cisco,0
+2003,Crystal,Cisco,0
+2004,Crystal,Cisco,0
+2005,Crystal,Cisco,0
+2006,Crystal,Cisco,0
+2007,Crystal,Cisco,0
+2008,Crystal,Cisco,0
+2009,Crystal,Cisco,0
+2010,Crystal,Cisco,0
+2011,Crystal,Cisco,0
+2012,Crystal,Cisco,0
+2013,Crystal,Cisco,0
+2014,Crystal,Cisco,0
+2015,Crystal,Cisco,0
+2016,Crystal,Cisco,0
+2017,Crystal,Cisco,0
+2018,Crystal,Cisco,0
+2019,Crystal,Cisco,0
+2020,Crystal,Cisco,0
+2021,Crystal,Cisco,1
+2022,Crystal,Cisco,10
+2023,Crystal,Cisco,14
+2024,Crystal,Cisco,19
+2025,Crystal,Cisco,
+1995,Wingra,Carp,
+1996,Wingra,Carp,2
+1997,Wingra,Carp,2
+1998,Wingra,Carp,2
+1999,Wingra,Carp,2.83
+2000,Wingra,Carp,2.83
+2001,Wingra,Carp,1.83
+2002,Wingra,Carp,3
+2003,Wingra,Carp,1
+2004,Wingra,Carp,1.58
+2005,Wingra,Carp,2.83
+2006,Wingra,Carp,1
+2007,Wingra,Carp,3.16
+2008,Wingra,Carp,1
+2009,Wingra,Carp,1.83
+2010,Wingra,Carp,1.33
+2011,Wingra,Carp,1.67
+2012,Wingra,Carp,1.83
+2013,Wingra,Carp,0
+2014,Wingra,Carp,0.67
+2015,Wingra,Carp,2.83
+2016,Wingra,Carp,0.83
+2017,Wingra,Carp,5.17
+2018,Wingra,Carp,0.83
+2019,Wingra,Carp,0.33
+2020,Wingra,Carp,
+2021,Wingra,Carp,1
+2022,Wingra,Carp,1
+2023,Wingra,Carp,0.67
+2024,Wingra,Carp,1
+1995,Wingra,EWM,1.143835616
+1996,Wingra,EWM,1
+1997,Wingra,EWM,1
+1998,Wingra,EWM,1
+1999,Wingra,EWM,2.660714286
+2000,Wingra,EWM,2.611111111
+2001,Wingra,EWM,1.041666667
+2002,Wingra,EWM,2.966101695
+2003,Wingra,EWM,2.714285714
+2004,Wingra,EWM,1.245283019
+2005,Wingra,EWM,1.538461538
+2006,Wingra,EWM,2.544117647
+2007,Wingra,EWM,1.306451613
+2008,Wingra,EWM,1.367088608
+2009,Wingra,EWM,1.309090909
+2010,Wingra,EWM,2.080808081
+2011,Wingra,EWM,2.350515464
+2012,Wingra,EWM,2.345132743
+2013,Wingra,EWM,1.943181818
+2014,Wingra,EWM,1.253333333
+2015,Wingra,EWM,2.346153846
+2016,Wingra,EWM,2.343434343
+2017,Wingra,EWM,1.93220339
+2018,Wingra,EWM,2.087912088
+2019,Wingra,EWM,2.770114943
+2022,Wingra,EWM,1.554216867
+2023,Wingra,EWM,3.360824742
+2024,Wingra,EWM,2.558823529
+1995,Mendota,Spiny WF,0
+1996,Mendota,Spiny WF,0
+1997,Mendota,Spiny WF,0
+1998,Mendota,Spiny WF,0
+1999,Mendota,Spiny WF,0
+2000,Mendota,Spiny WF,0
+2001,Mendota,Spiny WF,0
+2002,Mendota,Spiny WF,0
+2003,Mendota,Spiny WF,0
+2004,Mendota,Spiny WF,0
+2005,Mendota,Spiny WF,0
+2006,Mendota,Spiny WF,0
+2007,Mendota,Spiny WF,0
+2008,Mendota,Spiny WF,0
+2009,Mendota,Spiny WF,0
+2010,Mendota,Spiny WF,0
+2011,Mendota,Spiny WF,0
+2012,Mendota,Spiny WF,0
+2013,Mendota,Spiny WF,0
+2014,Mendota,Spiny WF,1
+2015,Mendota,Spiny WF,1
+2016,Mendota,Spiny WF,1
+2017,Mendota,Spiny WF,1
+2018,Mendota,Spiny WF,0.5
+2019,Mendota,Spiny WF,0.75
+2022,Mendota,Spiny WF,0.1
+2023,Mendota,Spiny WF,0.5
+2024,Mendota,Spiny WF,0.5
+1995,Mendota,Zebra M,0
+1996,Mendota,Zebra M,0
+1997,Mendota,Zebra M,0
+1998,Mendota,Zebra M,0
+1999,Mendota,Zebra M,0
+2000,Mendota,Zebra M,0
+2001,Mendota,Zebra M,0
+2002,Mendota,Zebra M,0
+2003,Mendota,Zebra M,0
+2004,Mendota,Zebra M,0
+2005,Mendota,Zebra M,0
+2006,Mendota,Zebra M,0
+2007,Mendota,Zebra M,0
+2008,Mendota,Zebra M,0
+2009,Mendota,Zebra M,0
+2010,Mendota,Zebra M,0
+2011,Mendota,Zebra M,0
+2012,Mendota,Zebra M,0
+2013,Mendota,Zebra M,0
+2014,Mendota,Zebra M,0
+2015,Mendota,Zebra M,0
+2016,Mendota,Zebra M,0
+2017,Mendota,Zebra M,0
+2018,Mendota,Zebra M,1
+2019,Mendota,Zebra M,1
+2022,Mendota,Zebra M,0.9
+2023,Mendota,Zebra M,0.8
+2024,Mendota,Zebra M,0.3
+1995,Mendota,Predators,1
+1996,Mendota,Predators,1
+1997,Mendota,Predators,1
+1998,Mendota,Predators,1
+1999,Mendota,Predators,0
+2000,Mendota,Predators,0
+2001,Mendota,Predators,0
+2002,Mendota,Predators,0
+2003,Mendota,Predators,0
+2004,Mendota,Predators,0
+2005,Mendota,Predators,0
+2006,Mendota,Predators,0
+2007,Mendota,Predators,0
+2008,Mendota,Predators,0
+2009,Mendota,Predators,0
+2010,Mendota,Predators,0
+2011,Mendota,Predators,0
+2012,Mendota,Predators,0
+2013,Mendota,Predators,0
+2014,Mendota,Predators,0
+2015,Mendota,Predators,0
+2016,Mendota,Predators,0
+2017,Mendota,Predators,0
+2018,Mendota,Predators,0
+2019,Mendota,Predators,0
+2022,Mendota,Predators,0
+2023,Mendota,Predators,0
+2024,Mendota,Predators,0
+1995,Monona,Spiny WF,0
+1996,Monona,Spiny WF,0
+1997,Monona,Spiny WF,0
+1998,Monona,Spiny WF,0
+1999,Monona,Spiny WF,0
+2000,Monona,Spiny WF,0
+2001,Monona,Spiny WF,0
+2002,Monona,Spiny WF,0
+2003,Monona,Spiny WF,0
+2004,Monona,Spiny WF,0
+2005,Monona,Spiny WF,0
+2006,Monona,Spiny WF,0
+2007,Monona,Spiny WF,0
+2008,Monona,Spiny WF,0
+2009,Monona,Spiny WF,0
+2010,Monona,Spiny WF,0
+2011,Monona,Spiny WF,0
+2012,Monona,Spiny WF,0
+2013,Monona,Spiny WF,0
+2014,Monona,Spiny WF,1
+2015,Monona,Spiny WF,1
+2016,Monona,Spiny WF,1
+2017,Monona,Spiny WF,1
+2018,Monona,Spiny WF,0.5
+2019,Monona,Spiny WF,0.75
+2022,Monona,Spiny WF,0.1
+2023,Monona,Spiny WF,0.5
+2024,Monona,Spiny WF,0.5
+1995,Monona,Zebra M,0
+1996,Monona,Zebra M,0
+1997,Monona,Zebra M,0
+1998,Monona,Zebra M,0
+1999,Monona,Zebra M,0
+2000,Monona,Zebra M,0
+2001,Monona,Zebra M,0
+2002,Monona,Zebra M,0
+2003,Monona,Zebra M,0
+2004,Monona,Zebra M,0
+2005,Monona,Zebra M,0
+2006,Monona,Zebra M,0
+2007,Monona,Zebra M,0
+2008,Monona,Zebra M,0
+2009,Monona,Zebra M,0
+2010,Monona,Zebra M,0
+2011,Monona,Zebra M,0
+2012,Monona,Zebra M,0
+2013,Monona,Zebra M,0
+2014,Monona,Zebra M,0
+2015,Monona,Zebra M,0
+2016,Monona,Zebra M,0
+2017,Monona,Zebra M,0
+2018,Monona,Zebra M,1
+2019,Monona,Zebra M,1
+2022,Monona,Zebra M,0.9
+2023,Monona,Zebra M,0.8
+2024,Monona,Zebra M,0.3
