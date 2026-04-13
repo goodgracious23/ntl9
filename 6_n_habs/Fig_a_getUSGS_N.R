@@ -110,6 +110,29 @@ p.tribs.l = p.tribs +
     legend.justification = c(0, 1),    # anchor top-left of legend box
     legend.background = element_rect(fill = "white", color = "black", linewidth = 0.2)
   ); p.tribs.l
+
+
+p.yahara = ggplot(N.2_yearly |> filter(gage == 'USGS-05427718')) +
+  geom_point(aes(x = total_Q/1e6, y = value/1e4, fill = name, shape = name), size = 2, alpha = 0.8) +
+  labs(x = expression(Annual~Discharge~(10^6*~m^3)),
+       y = expression(Load~(10^4*~kg))) +
+  scale_shape_manual(values = c(23,22), name = '') +
+  scale_fill_manual(values = c('#7f1147', '#c98c3d'), name = '') +
+  scale_x_continuous(n.breaks = 4) +
+  ylim(0,30) +
+  theme_bw(base_size = 9) +
+  theme(
+    # panel.border = element_blank(),
+    strip.background = element_blank(),
+    strip.text = element_text(color = "black"),
+    legend.title =  element_blank(),
+    legend.key.size = unit(12, "pt"),
+    legend.margin = margin(0.5, 3, 0.5, 0.5),
+    legend.position = c(0,1),   # x, y (0–1 coordinates)
+    legend.justification = c(0, 1),    # anchor top-left of legend box
+    legend.background = element_rect(fill = "white", color = "black", linewidth = 0.2)
+  ); p.yahara
+
 #7f1147
 #c98c3d
 

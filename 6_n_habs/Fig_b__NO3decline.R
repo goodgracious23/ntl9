@@ -4,7 +4,7 @@ library(tidyverse)
 library(patchwork)
 library(cowplot)
 ################## Source tributary plot ##################
-source('6_n_habs/1_getUSGS_N.R')
+# source('6_n_habs/1_getUSGS_N.R')
 
 ################## load MEMO aphan data ##################
 aphan = read_csv('6_n_habs/aphanizomenon_APHAN134_first_bloom.csv')
@@ -40,7 +40,7 @@ p.no3 = ggplot(zerono3) +
            parse = TRUE, vjust = 2, size = 2.5, color = '#c98c3d') +
   annotate("text", x = 2017, y = Inf,
            label = "Aphanizomenon\nfirst appears",
-           vjust = 5.8, size = 2.5, color = '#10adad') +
+           vjust = 5.6, size = 2.5, color = '#10adad') +
   scale_y_continuous(
     labels = function(x) format(as.Date(x, origin = "2025-01-01"), "%b")) +
   labs(y = 'Month') +
@@ -54,5 +54,5 @@ plot_grid(p.tribs.l, p.no3,
   align = "v",      # align vertically
   axis = "lr"       # align left/right axes
 )
-ggsave(filename = '6_n_habs/2_Nfig_v1.png', width = 6.5, height = 1.8, dpi = 500, bg = 'white')  
+# ggsave(filename = '6_n_habs/Nfig_v1.png', width = 6.5, height = 1.8, dpi = 500, bg = 'white')  
 
