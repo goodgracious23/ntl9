@@ -42,6 +42,7 @@ precip_tp <- ggplot(summary_means) +
   theme(
     panel.grid.major = element_line(color = "grey70", linewidth = 0.3),
     panel.grid.minor = element_blank(),
+    axis.title.y = element_text(size = 9),
     legend.title =  element_blank(),
     legend.key.size = unit(12, "pt"),
     legend.margin = margin(0.5, 3, 0.5, 0.5),
