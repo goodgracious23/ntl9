@@ -31,19 +31,25 @@ precip_tp <- ggplot(summary_means) +
     color = "black", size = 0.4
   ) +
   # geom_smooth(aes(x = arb.precip, y = mean_totpuf, col = removal), method = 'lm') +
-  geom_point(aes(x = arb.precip, y = mean_totpuf, fill = removal), shape = 21, size = 2.5)+
+  geom_point(aes(x = arb.precip, y = mean_totpuf, fill = removal), shape = 21, size = 1.4)+
   scale_fill_manual(values = c("#f0c44d", "#406691"))+
   scale_color_manual(values = c( "black", "black"), guide = "none")+
+  scale_y_continuous(expand = expansion(mult = 0.1)) +
+  scale_x_continuous(breaks = c(600,800,1000)) +
   ylab(expression(paste("TP", " (µg ", L^-1,")")))+
-  xlab("Precipitation (mm)")+
-  theme_bw(base_size = 9) +
+  xlab("Precip (mm)")+
+  theme_minimal(base_size = 9) +
   theme(
+    panel.grid.major = element_line(color = "grey70", linewidth = 0.3),
+    panel.grid.minor = element_blank(),
     legend.title =  element_blank(),
     legend.key.size = unit(12, "pt"),
     legend.margin = margin(0.5, 3, 0.5, 0.5),
-    legend.position = c(1,0),   # x, y (0–1 coordinates)
+    legend.position = 'none',
+    # legend.position = c(1,0),   # x, y (0–1 coordinates)
     legend.justification = c(1, 0),    # anchor top-left of legend box
     legend.background = element_rect(fill = "white", color = "black", linewidth = 0.2)
   ); precip_tp
 
-# ggsave("figures/Figure3.png", width = 6.5, height = 5, units = 'in', dpi = 500)
+# ggsave("2_wingra/Figure_rain.png", width = 1.8, height = 1.6, units = 'in', dpi = 500, bg = 'transparent')
+ggsave("2_wingra/Figure_rain_v2.png", width = 2.5, height = 0.9, units = 'in', dpi = 500, bg = 'transparent')

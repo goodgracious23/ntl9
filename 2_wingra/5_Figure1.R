@@ -12,15 +12,18 @@ theme_timeseries <- function() {
     ),
     xlab(""),
     scale_fill_manual(values = c("#f0c44d", "#406691")),
-    theme_bw(base_size = 9),
+    theme_minimal(base_size = 9),
     theme(legend.position = "none", 
+          panel.grid.major = element_line(color = "grey70", linewidth = 0.3),
+          panel.grid.minor = element_blank(),
           axis.title.x = element_blank())
   )
 }
 
 
 secchi_timeseries = ggplot() +
-  geom_point(data = secchi, aes(x = sampledate, y = secnview, fill = removal), size = 1, shape = 21, alpha = 0.8) +
+  geom_point(data = secchi, aes(x = sampledate, y = secnview, fill = removal), size = 1.4, 
+             shape = 21, alpha = 0.8, stroke = 0.3) +
   geom_line(data = summary_means, aes(x = as.Date(paste0(year4, "-07-01")), y = mean_secchi), 
             linewidth = 0.5) +
   ylab("Secchi\ndepth (m)") +
@@ -51,18 +54,20 @@ macro_timeseries <- ggplot(macrophyte_timeseries) +
   geom_vline(aes(xintercept = 2008), linewidth = 0.3, linetype = 2); macro_timeseries
 
 bethic_plant_timeseries = ggplot(benthic_spatial |> filter(depth == 3)) +
-  geom_col(aes(x = year4, y = plant_wt_spatial), fill = '#43a364') + 
-  geom_col(data = data.frame(x = c(2020,2021), y = 125),
+  geom_col(aes(x = year4, y = plant_wt_spatial), fill = '#6c8e67') + 
+  geom_col(data = data.frame(x = c(2020,2021), y = 135),
             aes(x = x, y = y), fill = "grey") +
-  annotate('text', x = 2020.5, y = 1, label = 'not sampled', angle = 90, col = 'grey30', hjust = 0, size = 2) +
+  # annotate('text', x = 2020.5, y = 1, label = 'not sampled', angle = 90, col = 'grey30', hjust = 0, size = 2) +
   # annotate('text', x = 2021, y = 1, label = 'not sampled', angle = 90, col = 'grey30', hjust = 0, size = 2) +
   # scale_fill_manual(values = c('#08c248', '#248c48', '#295e3b', '#203d2a'), name = 'Depth (m)') +
   ylab("Macrophyte\nwet mass (g)") +
-  scale_x_continuous(breaks = seq(1995,2020, by = 5), limits = c(1995,2025)) +
-  theme_bw(base_size = 9) + 
+  scale_x_continuous(breaks = seq(1995,2025, by = 5), limits = c(1995,2025.1)) +
+  theme_minimal(base_size = 9) + 
   theme(legend.position = 'none', 
+        panel.grid.major = element_line(color = "grey70", linewidth = 0.3),
+        panel.grid.minor = element_blank(),
         axis.title.x = element_blank()) +
-  geom_vline(aes(xintercept = 2008), linewidth = 0.3, linetype = 2)
+  geom_vline(aes(xintercept = 2008), linewidth = 0.3, linetype = 2); bethic_plant_timeseries
 
 bethic_algae_timeseries = ggplot(benthic_spatial) +
   geom_col(aes(x = year4, y = fil_algae_spatial), fill = '#43a364') + 
@@ -128,9 +133,17 @@ benthic_algae_box <- ggplot(benthic_spatial_year, aes(x = removal, y = fil_algae
 #           axis = "lr"       # align left/right axes
 # )
 
+secchi_timeseries
+ggsave("2_wingra/Figure_secchi_timeseries.png", width = 2.5, height = 0.8, units = 'in', dpi = 500)
+
+
 left <- plot_grid(secchi_timeseries, bethic_plant_timeseries, ncol = 1, 
-                  labels = c("a)", "b)", "c)"), label_y = c(1, 1.14),  # move "b" higher
+                  labels = c("a)", "b)", "c)"), label_y = c(1.0, 1.3),  # move "b" higher
+                  rel_heights = c(1.2,1),
                   label_size = 8, label_fontface = "plain")   # stack 1 over 2
+
+ggsave("2_wingra/Figure_timeseries.png", width = 2.5, height = 1.6, units = 'in', dpi = 500)
+
 
 plot_grid(
   left, precip_tp,
@@ -139,5 +152,5 @@ plot_grid(
 )
 
 
-ggsave("2_wingra/Figure2.png", width = 4.5, height = 1.8, units = 'in', dpi = 500)
+ggsave("2_wingra/Figure2.png", width = 4.5, height = 1.8, units = 'in', dpi = 500, bg = 'transparent')
 
