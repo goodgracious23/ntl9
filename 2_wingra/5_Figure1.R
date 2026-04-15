@@ -134,7 +134,8 @@ benthic_algae_box <- ggplot(benthic_spatial_year, aes(x = removal, y = fil_algae
 # )
 
 secchi_timeseries
-ggsave("2_wingra/Figure_secchi_timeseries.png", width = 2.5, height = 0.8, units = 'in', dpi = 500)
+ggsave("2_wingra/Figure_secchi_timeseries.png", width = 2.5, height = 0.8, units = 'in', dpi = 1000)
+ggsave("2_wingra/Figure_secchi_timeseries.pdf", width = 2.5, height = 0.8, units = 'in', dpi = 1000)
 
 
 left <- plot_grid(secchi_timeseries, bethic_plant_timeseries, ncol = 1, 

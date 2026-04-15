@@ -52,4 +52,5 @@ precip_tp <- ggplot(summary_means) +
   ); precip_tp
 
 # ggsave("2_wingra/Figure_rain.png", width = 1.8, height = 1.6, units = 'in', dpi = 500, bg = 'transparent')
-ggsave("2_wingra/Figure_rain_v2.png", width = 2.5, height = 0.9, units = 'in', dpi = 500, bg = 'transparent')
+ggsave("2_wingra/Figure_rain_v2.png", width = 2, height = 0.9, units = 'in', dpi = 1000, bg = 'transparent')
+ggsave("2_wingra/Figure_rain_v2.pdf", width = 2, height = 0.9, units = 'in', dpi = 1000, bg = 'transparent')
