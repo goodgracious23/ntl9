@@ -1,6 +1,7 @@
-
+library(tidyverse)
 library(patchwork)
 library(scales)
+library(cowplot)
 
 ################### Timeseries ###################
 theme_timeseries <- function() {
@@ -11,7 +12,7 @@ theme_timeseries <- function() {
       labels = date_format("%Y")
     ),
     xlab(""),
-    scale_fill_manual(values = c("#f0c44d", "#406691")),
+    scale_fill_manual(values = c("#9cbb3c", "#406691")),
     theme_minimal(base_size = 9),
     theme(legend.position = "none", 
           panel.grid.major = element_line(color = "grey70", linewidth = 0.3),

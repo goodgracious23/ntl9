@@ -31,8 +31,8 @@ precip_tp <- ggplot(summary_means) +
     color = "black", size = 0.4
   ) +
   # geom_smooth(aes(x = arb.precip, y = mean_totpuf, col = removal), method = 'lm') +
-  geom_point(aes(x = arb.precip, y = mean_totpuf, fill = removal), shape = 21, size = 1.4)+
-  scale_fill_manual(values = c("#f0c44d", "#406691"))+
+  geom_point(aes(x = arb.precip, y = mean_totpuf, fill = removal), shape = 21, size = 1.4, stroke = 0.3)+
+  scale_fill_manual(values = c("#9cbb3c", "#406691"))+
   scale_color_manual(values = c( "black", "black"), guide = "none")+
   scale_y_continuous(expand = expansion(mult = 0.1)) +
   scale_x_continuous(breaks = c(600,800,1000)) +
@@ -52,5 +52,6 @@ precip_tp <- ggplot(summary_means) +
   ); precip_tp
 
 # ggsave("2_wingra/Figure_rain.png", width = 1.8, height = 1.6, units = 'in', dpi = 500, bg = 'transparent')
-ggsave("2_wingra/Figure_rain_v2.png", width = 2, height = 0.9, units = 'in', dpi = 1000, bg = 'transparent')
-ggsave("2_wingra/Figure_rain_v2.pdf", width = 2, height = 0.9, units = 'in', dpi = 1000, bg = 'transparent')
+ggsave("2_wingra/Figure_rain_v2.png", width = 1.5, height = 0.95, units = 'in', dpi = 1000, bg = 'transparent')
+ggsave("2_wingra/Figure_rain_v2.pdf", width = 1.5, height = 0.95, units = 'in', dpi = 1000, bg = 'transparent')
+
