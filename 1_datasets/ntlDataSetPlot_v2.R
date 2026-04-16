@@ -44,7 +44,7 @@ c2 = 19874*24
 # North Temperate Lakes LTER: Physical and Chemical Limnology of Lake Kegonsa and Lake Waubesa 1994 – current
 c3 = 9268*13
 c.all = c1 + c2 + c3
-  
+
 ##Biological
 # North Temperate Lakes LTER: Chlorophyll – Madison Lakes Area 1995 – current
 b1 = 5917 * 4
@@ -117,85 +117,51 @@ ntl <- tibble(
   EndYear   = c(2024, 2024, 2024, 2024, 2024, 2024, 2024, 2025),
   
   Topics = c(
-    "ice, light, Secchi, temp, oxygen, color, lake level",
-    "ions, nutrients, carbon",
+    "ice, light, Secchi, temp, \noxygen, color, lake level",
+    "ions, nutrients, \ncarbon",
     "plankton, chlorophyll",
-    "benthic, pelagic, crayfish",
+    "benthic, pelagic, \ncrayfish",
     "richness, biomass",
-    "richness, species",
-    "level, chemistry",
-    "temperature, oxygen, light, fluorometry, metabolism"
+    "richness, \nspecies",
+    "level, \nchemistry",
+    "temperature, oxygen, light, \nfluorometry, metabolism"
   )) |> 
   mutate(Category = factor(Category, levels =  c("Physical", "Chemical", "Biological",
                                                  "Macroinverts", "Macrophytes", "Fish", 
                                                  "Groundwater", "High-frequency")))
-  # 
-  # mutate(Category = factor(Category, levels = c("Groundwater", "Fish", "Macrophytes",
-  #                                               "Macroinverts", "Biological",
-  #                                               "Chemical", "Physical")))
+# 
+# mutate(Category = factor(Category, levels = c("Groundwater", "Fish", "Macrophytes",
+#                                               "Macroinverts", "Biological",
+#                                               "Chemical", "Physical")))
 # Compute depth and wrap text for plotting
 ntl <- ntl %>%
   mutate(DepthYears = EndYear - StartYear + 1,
-    TopicsWrapped = str_wrap(Topics, width = 58))
-    # Category = fct_reorder(Category, DatasetCount)
-
-# Plot
-ggplot(ntl, aes(Category, DatasetCount, fill = Entries)) +
-  geom_col(width = 0.75, color = "black") +
-  # Topic labels inside bars
-  geom_text(aes(y = 0.2, label = TopicsWrapped),
-    hjust = 0, vjust = 0.5, color = "white", size = 2, fontface = "bold") +
-  coord_flip() +
-  scale_fill_met_c('Homer2') +
-  labs(title = "NTL Core Datasets", x = "", y = "Number of Datasets") +
-  theme_minimal(base_size = 8) +
-  theme(panel.grid.major.y = element_blank(),
-    legend.position = "right")
-
-# ggsave('ntlData.png', width = 4, height = 2, dpi = 500)
-
-# Take 2 
-ggplot(ntl, aes(Category, DatasetCount, fill = Entries)) +
-  geom_col(width = 0.75, color = "black") +
-  # topic labels inside bars
-  geom_text(aes(y = 0.2, label = TopicsWrapped),
-            hjust = 0, vjust = 0.5,
-            color = "white", size = 2, fontface = "bold") +
-  # entries labels to the right
-  geom_text(aes(y = DatasetCount + 0.35,
-                label = scales::comma(Entries)),
-            hjust = 0, size = 2.5) +
-  # coord_flip(clip = "off") +
-  scale_y_continuous(breaks = c(0,2,4,6,8,10)) +
-  scale_fill_met_c("Homer2") +
-  labs(title = "NTL Core Datasets", x = "", y = "Number of Datasets") +
-  theme_minimal(base_size = 8) +
-  theme(panel.grid.major.y = element_blank(),
-    legend.position = "none",
-    plot.margin = margin(5.5, 40, 5.5, 5.5)) # space for labels)
-# ggsave('ntlData2.png', width = 4, height = 2, dpi = 500)
+         TopicsWrapped = str_wrap(Topics, width = c(38)))
+# Category = fct_reorder(Category, DatasetCount)
 
 # Take 3
 ggplot(ntl, aes(Category, DatasetCount, fill = Entries)) +
   geom_col(width = 0.75, color = "black") +
   # topic labels inside bars
-  geom_text(aes(y = 0.1, label = TopicsWrapped),
+  geom_text(aes(y = 0.1, label = Topics),
             angle = 90,
             hjust = 0, vjust = 0.5,
             color = "white", size = 2) + #fontface = "bold"
   # entries above bars
-  geom_text(aes(y = DatasetCount + 1.07,
+  geom_text(aes(y = DatasetCount + 1.4,
                 label = scales::comma(Entries)),
-            vjust = 0.6, size = 2.3, angle = 65) +
+            vjust = 0.6, size = 2.3, angle = 45) +
   scale_fill_met_c("Homer2") +
-  scale_y_continuous(position = "right", limits = c(0,11.5), breaks = c(0,2,4,6,8,10)) +
+  scale_y_continuous(position = "right", limits = c(0,12.5), breaks = c(0,2,4,6,8,10)) +
   labs(y = "Number of Core Datasets") +
   theme_minimal(base_size = 8) +
   theme(axis.title.x = element_blank(),
-    panel.grid.major.x = element_blank(),
-    legend.position = "none",
-    # axis.text.x = element_text(angle =  315, hjust = 0, vjust = -1),
-    axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1.2),
-    plot.margin = margin(10, 10, 25, 10))
-ggsave('1_datasets/ntlData3.png', width = 2, height = 3.6, dpi = 700)
+        panel.grid.major.x = element_blank(),
+        legend.position = "none",
+        # axis.text.x = element_text(angle =  315, hjust = 0, vjust = -1),
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1.2),
+        plot.margin = margin(10, 10, 25, 10))
+
+
+ggsave('1_datasets/ntlData3_v2.png', width = 2.8, height = 2.7, dpi = 700)
 
