@@ -23,13 +23,6 @@ zerono3 = nuts %>%
   slice_min(sampledate, n = 1, with_ties = FALSE) %>%
   ungroup()
 
-zeronh4 = nuts %>%
-  mutate(year = year(sampledate)) %>%
-  group_by(year) %>%
-  filter(nh4_WSLH == 0) %>%
-  slice_min(sampledate, n = 1, with_ties = FALSE) %>%
-  ungroup()
-
 p.no3 = ggplot(zerono3) +
   geom_path(aes(x = year, y = yday(sampledate)), color = '#c98c3d') +
   geom_point(aes(x = year, y = yday(sampledate)), shape = 21, fill = '#c98c3d', size = 2) +
@@ -56,3 +49,40 @@ plot_grid(p.tribs.l, p.no3,
 )
 # ggsave(filename = '6_n_habs/Nfig_v1.png', width = 6.5, height = 1.8, dpi = 500, bg = 'white')  
 
+
+zeronh4 = nuts %>%
+  mutate(year = year(sampledate)) %>%
+  group_by(year) %>%
+  # filter(month(sampledate) %in% c(4,5)) |> 
+  filter(yday(sampledate) > 100) |>
+  filter(yday(sampledate) < 150) |>
+  summarise(nh4_WSLH = mean(nh4_WSLH, na.rm = T)) %>%
+  # slice_min(sampledate, n = 1, with_ties = FALSE) %>%
+  ungroup()
+
+scale_factor <- 365 / 0.31
+
+p.nh4 = ggplot(zeronh4) +
+  geom_path(data = zeronh4, aes(x = year, y = nh4_WSLH * scale_factor),
+            color = '#c98c3d') +
+  geom_point(data = zeronh4, aes(x = year, y = nh4_WSLH * scale_factor),
+             shape = 21, fill = '#c98c3d', size = 2) +
+  geom_path(data = aphan, aes(x = year, y = yday(date)),color = '#10adad') +
+  geom_point(data = aphan, aes(x = year, y = yday(date)), shape = 21, fill = '#10adad', size = 2) +
+  annotate("text", x = 2016, y = Inf,
+           label = "spring~NH[4]",
+           parse = TRUE, vjust = 2, size = 2.5, color = '#c98c3d') +
+  annotate("text", x = 2017, y = Inf,
+           label = "Aphanizomenon\nfirst appears",
+           vjust = 5.6, size = 2.5, color = '#10adad') +
+  scale_y_continuous(
+    name = "Date",
+    labels = function(x) format(as.Date(x, origin = "2025-01-01"), "%b"),
+    sec.axis = sec_axis(
+      ~ . / scale_factor,
+      name = expression(NH[4]~"(mg/L)"))) +
+  # scale_y_continuous(
+  #   labels = function(x) format(as.Date(x, origin = "2025-01-01"), "%b")) +
+  labs(y = 'Month') +
+  theme_bw(base_size = 9) +
+  theme(axis.title.x = element_blank()); p.nh4
