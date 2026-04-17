@@ -42,13 +42,16 @@ p.diazo = ggplot(annual_cyanos_combo %>%
   geom_point(size = 2, shape = 21) + 
   scale_fill_manual(values = c("#94346E", "#ffb703"), name = "") +
   ylab('Relative Abundance') +
+  ylim(0,0.16) +
   theme_bw(base_size = 9) + 
   theme(
+    axis.title.y = element_text(hjust = -0.5),
     axis.title.x = element_blank(),
     legend.title =  element_blank(),
     legend.key.size = unit(12, "pt"),
+    legend.key.spacing = unit(0.04, "cm"),
     legend.margin = margin(0.5, 1, 0.5, 0.5),
-    legend.position = c(1,1),   # x, y (0–1 coordinates)
+    legend.position = c(1,1.0),   # x, y (0–1 coordinates)
     legend.justification = c(1, 1),    # anchor top-left of legend box
     legend.background = element_rect(fill = "white", color = "black", linewidth = 0.2)
   ); p.diazo
@@ -62,4 +65,14 @@ plot_grid(p.yahara, p.no3, p.diazo,
 )
 
 ggsave(filename = '6_n_habs/2_Nfig_v2.png', width = 6.5, height = 1.8, dpi = 500, bg = 'white')  
+
+
+plot_grid(p.yahara, p.nh4, p.diazo,
+          ncol = 3, rel_widths = c(1,1.2,1),
+          labels = c("a)", "b)", "c)"), label_size = 8, label_fontface = "plain",
+          # align = "v",      # align vertically
+          axis = "lr"       # align left/right axes
+)
+
+ggsave(filename = '6_n_habs/2_Nfig_v3.png', width = 6.5, height = 1.5, dpi = 500, bg = 'white')  
 
