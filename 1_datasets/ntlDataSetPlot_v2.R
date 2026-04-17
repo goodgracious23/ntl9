@@ -1,5 +1,4 @@
 library(tidyverse)
-library(viridis)
 library(stringr)
 library(MetBrewer)
 
@@ -140,22 +139,26 @@ ntl <- ntl %>%
 # Category = fct_reorder(Category, DatasetCount)
 
 # Take 3
-ggplot(ntl, aes(Category, DatasetCount, fill = Entries)) +
+ggplot(ntl, aes(Category, DatasetCount, fill = Category)) +
   geom_col(width = 0.75, color = "black") +
   # topic labels inside bars
   geom_text(aes(y = 0.1, label = Topics),
             angle = 90,
             hjust = 0, vjust = 0.5,
-            color = "white", size = 2) + #fontface = "bold"
+            color = "white", size = 2, fontface = "bold", lineheight = 0.8) + #fontface = "bold"
   # entries above bars
   geom_text(aes(y = DatasetCount + 1.4,
                 label = scales::comma(Entries)),
             vjust = 0.6, size = 2.3, angle = 45) +
-  scale_fill_met_c("Homer2") +
+  scale_fill_manual(values = c("#8c1c13", "#7f3b08", "#3f5d2a", "#165d43", "#1f6f78", "#2d3142", "#4a4e69", "#1b1f3b")) +
+  # scale_fill_manual(values = c("#BF3626", "#D85F22", "#F29E29", "#F7C943",
+  #                              "#C8B64A", "#9FA341", "#6E8436", "#165D43")) +
+  # scale_fill_met_c("Homer2") +
   scale_y_continuous(position = "right", limits = c(0,12.5), breaks = c(0,2,4,6,8,10)) +
   labs(y = "Number of Core Datasets") +
   theme_minimal(base_size = 8) +
-  theme(axis.title.x = element_blank(),
+  theme(axis.title.y.right = element_text(vjust = -0.8),
+        axis.title.x = element_blank(),
         panel.grid.major.x = element_blank(),
         legend.position = "none",
         # axis.text.x = element_text(angle =  315, hjust = 0, vjust = -1),
