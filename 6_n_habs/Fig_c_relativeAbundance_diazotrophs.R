@@ -48,8 +48,9 @@ p.diazo = ggplot(annual_cyanos_combo %>%
     axis.title.y = element_text(hjust = -0.5),
     axis.title.x = element_blank(),
     legend.title =  element_blank(),
-    legend.key.size = unit(12, "pt"),
-    legend.key.spacing = unit(0.04, "cm"),
+    legend.key.size = unit(9, "pt"),
+    legend.key.spacing = unit(0.02, "cm"),
+    legend.key.spacing.y = unit(0.0, "cm"),
     legend.margin = margin(0.5, 1, 0.5, 0.5),
     legend.position = c(1,1.0),   # x, y (0–1 coordinates)
     legend.justification = c(1, 1),    # anchor top-left of legend box

@@ -127,7 +127,7 @@ p.yahara = ggplot(N.2_yearly |> filter(gage == 'USGS-05427718')) +
     strip.background = element_blank(),
     strip.text = element_text(color = "black"),
     legend.title =  element_blank(),
-    legend.key.size = unit(12, "pt"),
+    legend.key.size = unit(9, "pt"),
     legend.margin = margin(0.5, 3, 0.5, 0.5),
     legend.position = c(0,1),   # x, y (0–1 coordinates)
     legend.justification = c(0, 1),    # anchor top-left of legend box

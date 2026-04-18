@@ -150,7 +150,7 @@ ggplot(ntl, aes(Category, DatasetCount, fill = Category)) +
   geom_text(aes(y = DatasetCount + 1.4,
                 label = scales::comma(Entries)),
             vjust = 0.6, size = 2.3, angle = 45) +
-  scale_fill_manual(values = c("#8c1c13", "#7f3b08", "#3f5d2a", "#165d43", "#1f6f78", "#2d3142", "#4a4e69", "#1b1f3b")) +
+  scale_fill_manual(values = c("#8c1c13", "#7f3b08", "#3f5d2a", "#165d43", "#1f6f78", "#23484d", "#4a4e69", "#1b1f3b")) +
   # scale_fill_manual(values = c("#BF3626", "#D85F22", "#F29E29", "#F7C943",
   #                              "#C8B64A", "#9FA341", "#6E8436", "#165D43")) +
   # scale_fill_met_c("Homer2") +
@@ -166,5 +166,5 @@ ggplot(ntl, aes(Category, DatasetCount, fill = Category)) +
         plot.margin = margin(10, 10, 25, 10))
 
 
-ggsave('1_datasets/ntlData3_v2.png', width = 2.8, height = 2.7, dpi = 700)
+ggsave('1_datasets/ntlData3_v2.png', width = 2.8, height = 2.8, dpi = 700)
 
