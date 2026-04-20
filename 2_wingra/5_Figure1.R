@@ -13,7 +13,7 @@ theme_timeseries <- function() {
     ),
     xlab(""),
     scale_fill_manual(values = c("#9cbb3c", "#406691")),
-    theme_minimal(base_size = 9),
+    theme_minimal(base_size = 8),
     theme(legend.position = "none", 
           panel.grid.major = element_line(color = "grey70", linewidth = 0.3),
           panel.grid.minor = element_blank(),
@@ -27,7 +27,7 @@ secchi_timeseries = ggplot() +
              shape = 21, alpha = 0.8, stroke = 0.3) +
   geom_line(data = summary_means, aes(x = as.Date(paste0(year4, "-07-01")), y = mean_secchi), 
             linewidth = 0.5) +
-  ylab("Secchi\ndepth (m)") +
+  ylab("Water\nclarity (m)") +
   theme_timeseries() +
   geom_vline(aes(xintercept = as.Date('2008-01-15')), linewidth = 0.3, linetype = 2)
 
@@ -135,8 +135,10 @@ benthic_algae_box <- ggplot(benthic_spatial_year, aes(x = removal, y = fil_algae
 # )
 
 secchi_timeseries
-ggsave("2_wingra/Figure_secchi_timeseries.png", width = 2.5, height = 0.8, units = 'in', dpi = 1000)
-ggsave("2_wingra/Figure_secchi_timeseries.pdf", width = 2.5, height = 0.8, units = 'in', dpi = 1000)
+ggsave("2_wingra/Figure_secchi_timeseries_v2.png", width = 4.6, height = 0.8, units = 'in', dpi = 1000, 
+       bg = 'transparent')
+
+# ggsave("2_wingra/Figure_secchi_timeseries.pdf", width = 2.5, height = 0.8, units = 'in', dpi = 1000)
 
 
 left <- plot_grid(secchi_timeseries, bethic_plant_timeseries, ncol = 1, 
