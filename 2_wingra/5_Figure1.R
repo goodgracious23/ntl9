@@ -28,8 +28,8 @@ secchi_timeseries = ggplot() +
   geom_line(data = summary_means, aes(x = as.Date(paste0(year4, "-07-01")), y = mean_secchi), 
             linewidth = 0.5) +
   ylab("Water\nclarity (m)") +
-  theme_timeseries() +
-  geom_vline(aes(xintercept = as.Date('2008-01-15')), linewidth = 0.3, linetype = 2)
+  theme_timeseries() 
+  # geom_vline(aes(xintercept = as.Date('2008-01-15')), linewidth = 0.3, linetype = 2)
 
 tp_timeseries <- ggplot() +
   geom_point(data = tp,aes(x = sampledate, y = totpuf, fill = removal), size = 1.1, shape = 21, alpha = 0.5) +
