@@ -49,7 +49,7 @@ ice_tr = ice %>% filter(lakeid == "TR") %>% rename(year4 = year) |>
   select(lakeid, year4, ice_on, ice_off) |> 
   mutate(doy_iceon = yday(ice_on),
          doy_iceon = case_when(doy_iceon < 100 ~ doy_iceon + 365, TRUE ~ doy_iceon),
-         doy_iceoff = yday(ice_off))) 
+         doy_iceoff = yday(ice_off))
 
 fish_ice = left_join(fish_clean, ice_tr, by = "year4") %>%
   group_by(spname) |> 
@@ -82,7 +82,7 @@ p.fishice = ggplot(fish_ice |> filter(spname %in% c('CISCO','LAKEWHITEFISH')),
 plot_grid(
   p.fall, p.fishice,
   labels = c("a)", "b)"), label_size = 8, label_fontface = "plain",
-  label_x = 0, label_y = 1,
+  label_x = 0, label_y = 0.97,
   hjust = -0.2, vjust = 1.2, ncol = 2, axis = "tblr")
 
 ggsave(filename = '4_fall_phenology/fallMixing_fish_3.png', width = 6.5, height = 1.4, dpi = 500, bg = 'white')  
